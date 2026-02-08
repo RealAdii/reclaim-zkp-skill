@@ -120,7 +120,7 @@ export default function App() {
         <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none" />
         {/* Glow orb */}
         <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
-          style={{ background: 'radial-gradient(circle, rgba(0, 255, 136, 0.06) 0%, transparent 70%)' }} />
+          style={{ background: 'radial-gradient(circle, var(--color-neon-glow-subtle) 0%, transparent 70%)' }} />
 
         <div className="max-w-[700px] text-center relative z-10">
           {/* Hero tag */}
@@ -130,7 +130,7 @@ export default function App() {
           </div>
 
           <h1 className="text-[clamp(28px,4vw,44px)] font-bold leading-[1.15] tracking-tight mb-7 text-text-primary">
-            Connect and <span className="text-neon" style={{ textShadow: '0 0 30px rgba(0, 255, 136, 0.35)' }}>Verify User Data</span> from any source
+            Connect and <span className="text-neon" style={{ textShadow: '0 0 30px var(--color-neon-glow-text)' }}>Verify User Data</span> from any source
           </h1>
 
           {/* Card */}
@@ -152,7 +152,7 @@ export default function App() {
               </div>
             )}
             {status === 'success' && (
-              <div className="text-center px-3.5 py-2.5 mt-3.5 rounded text-xs font-medium font-mono bg-[rgba(0,255,136,0.1)] text-neon border border-neon-dark">
+              <div className="text-center px-3.5 py-2.5 mt-3.5 rounded text-xs font-medium font-mono bg-neon-glow-bg text-neon border border-neon-dark">
                 zk-proof generated successfully
               </div>
             )}

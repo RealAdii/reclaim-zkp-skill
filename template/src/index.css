@@ -20,6 +20,12 @@
   --color-error: #FF5555;
   --color-error-bg: rgba(255, 50, 50, 0.1);
   --color-error-border: #3A1A1A;
+  --color-neon-hover: #33ffaa;
+  --color-neon-glow-subtle: rgba(0, 255, 136, 0.06);
+  --color-neon-glow-text: rgba(0, 255, 136, 0.35);
+  --color-neon-glow-bg: rgba(0, 255, 136, 0.1);
+  --color-bg-primary-glass: rgba(10, 10, 15, 0.9);
+  --color-bg-primary-30: rgba(10, 10, 15, 0.3);
   --font-mono: 'JetBrains Mono', monospace;
   --font-display: 'Space Grotesk', sans-serif;
 }
@@ -34,7 +40,7 @@ body {
 
 /* Glow button effect */
 @utility glow-neon {
-  box-shadow: 0 0 20px var(--color-neon-glow), 0 0 60px rgba(0, 255, 136, 0.08);
+  box-shadow: 0 0 20px var(--color-neon-glow), 0 0 60px var(--color-neon-glow-subtle);
 }
 
 /* Grid background */
